@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'))
 fs.require('fs')
 
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync('/bitstarte/index.html' , "utf8")
+  response.send(fs.readFile('/bitstarter/index.html' , "utf8")
 })
 
 app.listen(app.get('port'), function() {
