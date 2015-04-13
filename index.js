@@ -7,7 +7,10 @@ app.use(express.static(__dirname + '/public'))
 fs.require('fs')
 
 app.get('/', function(request, response) {
-  response.send(fs.readFile('/bitstarter/index.html' , "utf8")
+  response.send(fs.readFile('/etc/passwd', function (err, data) {
+  if (err) throw err;
+  console.log(data);
+});)
 })
 
 app.listen(app.get('port'), function() {
