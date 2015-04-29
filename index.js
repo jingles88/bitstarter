@@ -7,8 +7,7 @@ app.use(express.static(__dirname + '/public'))
 fs = fs.require('fs')
 
 app.get('/', function(request, response) {
-  response.send(fs.readFile('index.html', 'utf8',  function (err, data) {
-  if (err) throw err;
+  response.send("HellowWorld2");
   console.log(data);
 });)
 })
