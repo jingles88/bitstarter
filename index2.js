@@ -5,13 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send(fs = require('fs');
-fs.readFile('/bitstarter/index.html', 'utf8', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(data);
-}););
+  response.send("The Dream - #jingisking #feeling5again");
 });
 
 app.listen(app.get('port'), function() {
