@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express();
+var x;
 var fs = require('fs');
 fs.readFile('/home/ubuntu/bitstarter/index.html', 'utf8' , function(err,data)
 {
@@ -7,10 +8,8 @@ if (err)
 {
 return console.log(err);
 }
-console.log(data);
+x = data;
 });
-
-var string = data
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
