@@ -1,13 +1,12 @@
 var express = require('express')
 var app = express();
 
-// Load the fs (filesystem) module
 var fs = require('fs');
 
-// Read the contents of the file into memory.
 fs.readFile('/home/ubuntu/bitstarter/index.html', function (err, logData);
-
-
+{
+var x = console.log(data);
+}
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
