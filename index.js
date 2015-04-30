@@ -5,12 +5,7 @@ var app = express();
 var fs = require('fs');
 
 // Read the contents of the file into memory.
-fs.readFile('example_log.txt', function (err, logData) {
-  
-// If an error occurred, throwing it will
-  // display the exception and end our app.
-  if (err) throw err;
-});
+fs.readFile('/home/ubuntu/bitstarter/index.html', function (err, logData);
 
 
 app.set('port', (process.env.PORT || 5000))
