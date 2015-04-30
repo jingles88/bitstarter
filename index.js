@@ -2,14 +2,13 @@ var express = require('express')
 var app = express();
 var x;
 var fs = require('fs');
+
 fs.readFile('/home/ubuntu/bitstarter/index.html', 'utf8' , function (err,data)
 {
-if (err)
-{
-x = broken;
-}
+if (err) throw err;
 x = data;
-});
+}
+);
 
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
