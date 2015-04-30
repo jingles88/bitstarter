@@ -1,17 +1,19 @@
 var express = require('express')
 var app = express();
-
 var fs = require('fs');
-
-fs.readFile('/home/ubuntu/bitstarter/index.html', function (err, logData);
-{
-var x = console.log(data);
-}
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
-
+//fs.readFile('/home/ubuntu/bitstarter/index.html', 'utf8', function (err, data$
+//  if (err) throw err;
+//  console.log(data);
+//});
 app.get('/', function(request, response) {
-  response.send(fs);
+response.send(fs.readFile('/home/ubuntu/bitstarter/index.html', 'utf8', functio$
+  if (err) throw err;
+  console.log(data);
+});
+
+);
 });
 
 app.listen(app.get('port'), function() {
